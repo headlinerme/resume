@@ -122,7 +122,7 @@
     justify-content: center;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .about-content {
         width: 100%;
     }
@@ -157,7 +157,7 @@
     border-top-right-radius: 10px;
 }
 
-.about-text p{
+.about-text p {
     text-align: justify;
     padding: 0% 4% 5% 4%;
     color: #000;
@@ -207,7 +207,7 @@
     margin-bottom: 5%;
 }
 
-.stack-card p {
+.stack-card p:first-of-type {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10%;
