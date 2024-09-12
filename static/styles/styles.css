@@ -36,20 +36,12 @@
     transition: 1s;
 }
 
-/* Основной блок (шапка) */
-.main {
-    padding: 4% 0;
-}
-
+/* Основной блок */
 .main-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.main-text {
-    width: 40%;
-    margin-right: 30%;
+    padding: 4% 0;
 }
 
 .main-pretitle {
@@ -59,13 +51,12 @@
 }
 
 .main-title {
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 600;
     margin-bottom: 1%;
 }
 
 .main-subtitle {
-    line-height: 120%;
     font-size: 16px;
     opacity: 60%;
     margin-bottom: 8%;
@@ -86,16 +77,13 @@
     transition: 1s;
 }
 
-.main-image {
-    background: none;
-}
-
-.main-image img {
-    border-radius: 10%;
+.main-right-side {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .main-links {
-    margin-left: 4%;
     display: flex;
     flex-direction: column;
 }
@@ -110,34 +98,18 @@
     transition: 1s;
 }
 
-@media (max-width: 1000px) {
-    .main-text {
-        margin-right: 10%;
-    }
-}
-
 /* Блок "Обо мне" */
 .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
     padding: 2% 0;
     background: linear-gradient(#111, #000, #000, #000, #000, #000, #111);
 }
 
-.about-content {
+.about-left-side {
     background: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@media (max-width: 1000px) {
-    .about-content {
-        width: 100%;
-    }
-}
-
-.about-left {
-    background: none;
-    width: 50%;
 }
 
 .about-title {
@@ -149,6 +121,9 @@
 }
 
 .about-text {
+    width: 80%;
+    height: 370px;
+    overflow: auto;
     opacity: 80%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -165,39 +140,23 @@
 
 .about-text p {
     text-align: justify;
-    line-height: 130%;
     padding: 0% 4% 5% 4%;
     color: #000;
     background-color: #fff;
 }
 
-.about-photos {
-    background: none;
+.about-right-side {
     display: flex;
     align-items: last baseline;
+    justify-content: end;
+    background: none;
 }
 
-@media (max-width: 1000px) {
-    .about-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .about-left {
-        width: 100%;
-    }
-
-    .about-photos {
-        width: 100%;
-    }
-}
-
-.about-photos img {
+.about-right-side img {
     margin: 2%;
 }
 
-.c-photos {
+.photos {
     display: flex;
     flex-direction: column;
     background: none;
@@ -237,7 +196,7 @@
 
 /* Блок "Опыт и проекты" */
 .experience-content {
-    margin-bottom: 8%;
+    margin-bottom: 2%;
 }
 
 .experience-title {
@@ -266,7 +225,6 @@
 .experience-description {
     font-size: 16px;
     text-align: justify;
-    line-height: 130%;
     margin-bottom: 3%;
 }
 
