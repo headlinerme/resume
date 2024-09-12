@@ -44,7 +44,7 @@
 .main-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .main-text {
@@ -87,7 +87,6 @@
 }
 
 .main-image {
-    
     background: none;
 }
 
@@ -109,6 +108,12 @@
 .main-links a:hover {
     opacity: 100%;
     transition: 1s;
+}
+
+@media (max-width: 1000px) {
+    .main-text {
+        margin-right: 10%;
+    }
 }
 
 /* Блок "Обо мне" */
@@ -173,8 +178,18 @@
 }
 
 @media (max-width: 1000px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
     .about-photos {
-        width: 110%;
+        width: 100%;
     }
 }
 
