@@ -129,7 +129,7 @@
     width: 80%;
     height: 370px;
     overflow: auto;
-    opacity: 80%;
+    opacity: 90%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: #000;
@@ -180,23 +180,29 @@
 .stack-cards {
     padding: 4% 0;
     display: flex;
-    align-items: last baseline;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .stack-card {
     width: 20%;
-    text-align: center;
+    padding: 2%;
+    border-radius: 2%;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
 }
 
 .stack-card img {
-    margin-bottom: 4%;
+    background-color: #fff;
+    margin-right: 10%;
 }
 
-.stack-card p:first-of-type {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10%;
+.stack-card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
 }
 
 /* Блок "Опыт и проекты" */
