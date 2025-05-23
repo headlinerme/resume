@@ -51,9 +51,9 @@
 }
 
 .main-title {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 600;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 .main-subtitle {
@@ -63,7 +63,7 @@
 }
 
 .main-button {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
@@ -81,6 +81,11 @@
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+.main-right-side img:first-of-type {
+    border-radius: 2%;
+    margin-right: 10%;
 }
 
 .main-links {
