@@ -175,10 +175,15 @@
 .stack-title {
     font-size: 40px;
     font-weight: 600;
+    margin-bottom: 4%;
+}
+
+.stack-subtitle {
+    font-size: 20px;
 }
 
 .stack-cards {
-    padding: 4% 0;
+    padding: 1% 0;
     display: flex;
     justify-content: space-between;
 }
@@ -195,7 +200,7 @@
 
 .stack-card img {
     background-color: #fff;
-    margin-right: 10%;
+    padding-right: 3%;
 }
 
 .stack-card p {
