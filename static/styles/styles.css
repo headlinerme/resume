@@ -227,7 +227,7 @@
 
 .experience-card {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 3% 0;
 }
 
