@@ -612,11 +612,6 @@ footer {
 }
 
 .experience-card {
-<<<<<<< HEAD
-    display: flex;
-    justify-content: left;
-    padding: 3% 0;
-=======
     display: block;
     padding: 0;
 }
@@ -631,7 +626,6 @@ footer {
     box-shadow:
         0 18px 36px rgba(0, 0, 0, 0.45),
         inset 0 1px 2px rgba(255, 255, 255, 0.5);
->>>>>>> 7e858ec (feat: Рефакторинг стилей и обновление изображений для улучшения UI)
 }
 
 .experience-subtitle {
