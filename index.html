@@ -15,6 +15,7 @@
                     <a href="#about">ОБО МНЕ</a>
                     <a href="#stack">МОЙ СТЭК</a>
                     <a href="#experience">ОПЫТ И ПРОЕКТЫ</a>
+                    <span class="nav-indicator" aria-hidden="true"></span>
                 </div>
             </div>
         </div>
@@ -25,7 +26,7 @@
             <div class="main-content">
                 <div class="main-left-side">
                     <div class="main-pretitle">
-                        БЭКЭНД-РАЗРАБОТЧИК
+                        BACKEND DEVELOPER
                     </div>
                     <div class="main-title">
                         ТИМ КОНДРАТЬЕВ
@@ -37,12 +38,13 @@
                     <a href="https://t.me/headlinerme" class="main-button">СВЯЗАТЬСЯ СО МНОЙ</a>
                 </div>
                 <div class="main-right-side">
-                    <img src="static/images/main.png" width="320">
+                    <div class="main-photo">
+                        <img src="static/images/main.png" width="320">
+                    </div>
                     <div class="main-links">
                         <a href="https://t.me/headlinerme"><img src="static/images/tg.png"></a>
                         <a href="https://instagram.com/headlinerme?igshid=OGQ5ZDc2ODk2ZA=="><img
                                 src="static/images/inst.png"></a>
-                        <a href="https://vk.com/headlinerme"><img src="static/images/vk.png"></a>
                     </div>
                 </div>
             </div>
@@ -57,19 +59,48 @@
                         ОБО МНЕ
                     </div>
                     <div class="about-text">
-                        <img src="static/images/about-text-img.png">
-                        <p>Бэкенд-разработчик с опытом в стартапах и B2B-продуктах, специализируюсь на Python и
-                            построении систем, которые действительно работают. Работаю на стыке автоматизации, ИИ и
-                            практической пользы для бизнеса.
-                            <br><br>В проектах отвечаю за всё — от архитектуры backend-части до внедрения ML-решений,
-                            настройки базы данных и публикации в прод. Умею работать с FastAPI, SQLAlchemy, Redis,
-                            Docker. Понимаю бизнес-контекст, быстро адаптируюсь под задачи и всегда довожу начатое до
-                            рабочего результата.
-                            <br><br>Сейчас развиваю два ИИ-проекта в рамках Algorithm AI: "Квалификатор Лидов"
-                            (ассистент для продаж) и "ИИ Юрист" (консультант на основе юр. кейсов).
-                            <br><br>Инженер по сути. Пишу чистый, поддерживаемый код, не боюсь сложных задач, постоянно
-                            расту в сторону продвинутой backend-инженерии.
-                        </p>
+                        <div class="about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Кто я</span>
+                            </div>
+                            <div class="window-body">
+                                Я Python backend-разработчик, который кайфует от интеграций и автоматизации. Нравится
+                                брать хаос из сообщений, заявок, CRM и таблиц — и превращать его в понятный сервис,
+                                который реально помогает людям в работе.
+                            </div>
+                        </div>
+                        <div class="about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Что умею</span>
+                            </div>
+                            <div class="window-body">
+                                Делаю “связку” между системами: вебхуки, микросервисы, очереди и обработчики событий,
+                                Telegram-боты, CRM-интеграции (amoCRM), сценарные движки (FSM), ETL и аналитику. Люблю,
+                                когда всё работает стабильно: события не теряются, запросы не дублируются, ошибки
+                                предсказуемы, а результат можно проверить цифрами.
+                            </div>
+                        </div>
+                        <div class="about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Как работаю</span>
+                            </div>
+                            <div class="window-body">
+                                Я довожу задачи до конца: сначала быстро понимаю цель и ограничения, потом проектирую
+                                простой контракт и архитектуру, собираю рабочую версию, добавляю защиту от “боевых”
+                                случаев (ретраи, идемпотентность, дедуп, контроль формата), деплою (Docker/systemd) и
+                                оставляю систему в таком виде, чтобы её было удобно поддерживать. В итоге получается не
+                                “код ради кода”, а понятный инструмент, который можно спокойно развивать.
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="about-right-side">
@@ -91,24 +122,132 @@
                 </div>
                 <div class="stack-top">
                     <div class="stack-subtitle">
-                        Языки и инструменты
+                        Инструменты и среды
                     </div>
                     <div class="stack-cards">
-                        <div class="stack-card">
-                            <img src="static/images/python.png" width="50">
-                            <p>Python<br>- FastAPI<br>- Aiogram<br>- SQLAlchemy</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">PYTHON</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M9 4h6a3 3 0 0 1 3 3v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7a3 3 0 0 1 3-3z" />
+                                    <path d="M15 20H9a3 3 0 0 1-3-3v-4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4a3 3 0 0 1-3 3z" />
+                                    <circle cx="10" cy="7" r="1" />
+                                    <circle cx="14" cy="17" r="1" />
+                                </svg>
+                                <p>Python<br>- FastAPI<br>- Pydantic<br>- asyncio / aiohttp<br>- aiogram</p>
+                            </div>
                         </div>
-                        <div class="stack-card">
-                            <img src="static/images/sql.png" width="70">
-                            <p>SQL<br>- Postgres<br>- Redis</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">DATA</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 7c0 2.2 3.1 4 7 4s7-1.8 7-4-3.1-4-7-4-7 1.8-7 4z" />
+                                    <path d="M5 7v5c0 2.2 3.1 4 7 4s7-1.8 7-4V7" />
+                                </svg>
+                                <p>PostgreSQL<br>- SQLAlchemy (async)<br>- Alembic<br>- Redis (Streams)</p>
+                            </div>
                         </div>
-                        <div class="stack-card">
-                            <img src="static/images/git.png" width="60">
-                            <p>Git<br>- GitHub<br>- Gitverse</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">WORKFLOW</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="6" cy="6" r="2" />
+                                    <circle cx="18" cy="6" r="2" />
+                                    <circle cx="12" cy="18" r="2" />
+                                    <path d="M8 6h8M6 8v6a4 4 0 0 0 4 4h2M16 8v4a4 4 0 0 1-4 4" />
+                                </svg>
+                                <p>Git<br>- GitHub<br>- PR / Code Review<br>- Документация</p>
+                            </div>
                         </div>
-                        <div class="stack-card">
-                            <img src="static/images/docker.png" width="50">
-                            <p>Docker<br>- Docker Compose</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">INFRA</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="tool-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 14h12v4H4z" />
+                                    <path d="M6 10h4v4H6zM10 6h4v4h-4zM14 10h4v4h-4z" />
+                                    <path d="M18 14c2 0 2-2 2-2h-2" />
+                                </svg>
+                                <p>Docker<br>- Docker Compose<br>- systemd<br>- Linux</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">TESTING</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7 3h10M9 3v4l-4 7a4 4 0 0 0 3.5 6h7a4 4 0 0 0 3.5-6l-4-7V3" />
+                                </svg>
+                                <p>Качество<br>- Pytest<br>- Моки / фикстуры<br>- Проверка контрактов API</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">OBSERVABILITY</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 18h16" />
+                                    <path d="M7 16v-6M12 16V8M17 16v-3" />
+                                </svg>
+                                <p>Наблюдаемость<br>- Логи<br>- Trace ID<br>- Метрики / алерты</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">INTEGRATIONS</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 12h12" />
+                                    <path d="M10 8l-4 4 4 4M14 8l4 4-4 4" />
+                                </svg>
+                                <p>Интеграции<br>- Webhooks<br>- API</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">LLM</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 3l1.6 3.3L17 8l-3.4 1.7L12 13l-1.6-3.3L7 8l3.4-1.7z" />
+                                    <path d="M18 13l.8 1.7 1.8.9-1.8.9L18 18l-.8-1.5-1.8-.9 1.8-.9z" />
+                                </svg>
+                                <p>LLM-инструменты<br>- OpenAI API<br>- Валидация формата<br>- Usage / cost<br>- Shadow-mode</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,17 +256,245 @@
                         Навыки
                     </div>
                     <div class="stack-cards">
-                        <div class="stack-card">
-                            <p>Проектирование REST API</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Integration</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7 7h4v4H7zM13 13h4v4h-4z" />
+                                    <path d="M11 9h2m-2 6h2M9 11v2m6-2v2" />
+                                    <path d="M5 5h6v6H5zM13 13h6v6h-6z" />
+                                </svg>
+                                <p>Интеграции и вебхуки</p>
+                            </div>
                         </div>
-                        <div class="stack-card">
-                            <p>Асинхронное программирование</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">API</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 7h14M5 12h10M5 17h8" />
+                                    <path d="M15 12h4M13 17h6" />
+                                </svg>
+                                <p>API-дизайн и контракты</p>
+                            </div>
                         </div>
-                        <div class="stack-card">
-                            <p>Парсинг, автоматизация</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Event</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 8a6 6 0 0 1 12 0" />
+                                    <path d="M5 12h4M15 12h4M8 16h8" />
+                                </svg>
+                                <p>Event-driven архитектура</p>
+                            </div>
                         </div>
-                        <div class="stack-card">
-                            <p>Работа с AI-агентами и LLM (Dify, OpenAI API)</p>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Streams</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 7h16M4 12h16M4 17h16" />
+                                    <path d="M8 5l-2 2 2 2M16 10l2 2-2 2M8 15l-2 2 2 2" />
+                                </svg>
+                                <p>Очереди и стримы (Redis Streams)</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Idempotent</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 12a6 6 0 0 1 10-4M18 12a6 6 0 0 1-10 4" />
+                                    <path d="M8 8h4M12 16h4" />
+                                </svg>
+                                <p>Идемпотентность и дедупликация</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Backoff</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 16l3-3-3-3M18 8l-3 3 3 3" />
+                                    <path d="M10 4h4M10 20h4" />
+                                </svg>
+                                <p>Ретраи / backoff / rate-limit</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Resilience</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 8l6-4 6 4v6l-6 4-6-4z" />
+                                    <path d="M9 12l2 2 4-4" />
+                                </svg>
+                                <p>Обработка ошибок и устойчивость</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Observability</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 18h16" />
+                                    <path d="M7 16v-6M12 16V8M17 16v-3" />
+                                </svg>
+                                <p>Логирование, трейсинг, метрики</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">CRM</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 7h16v10H4z" />
+                                    <path d="M8 7v10M16 7v10" />
+                                </svg>
+                                <p>CRM-интеграции (amoCRM)</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Telegram</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 12l16-7-5 14-4-4-4 3 1-5z" />
+                                </svg>
+                                <p>Telegram-боты (aiogram)</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">FSM</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M6 18v-2a4 4 0 0 1 4-4h1" />
+                                    <path d="M18 6v2a4 4 0 0 1-4 4h-1" />
+                                    <path d="M8 6h8v4H8zM8 14h8v4H8z" />
+                                </svg>
+                                <p>Сценарные движки (FSM)</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Schedulers</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 7v5l3 3" />
+                                    <path d="M5 12a7 7 0 1 0 14 0A7 7 0 0 0 5 12z" />
+                                </svg>
+                                <p>Фоновые задачи и планировщики</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Postgres</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 7c0 2.2 3.1 4 7 4s7-1.8 7-4-3.1-4-7-4-7 1.8-7 4z" />
+                                    <path d="M5 7v5c0 2.2 3.1 4 7 4s7-1.8 7-4V7" />
+                                </svg>
+                                <p>PostgreSQL и миграции (Alembic)</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Testing</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M7 3h10M9 3v4l-4 7a4 4 0 0 0 3.5 6h7a4 4 0 0 0 3.5-6l-4-7V3" />
+                                </svg>
+                                <p>Тестирование (Pytest)</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">ETL</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 19h16" />
+                                    <path d="M7 16v-6M12 16V8M17 16v-3" />
+                                </svg>
+                                <p>ETL и аналитика</p>
+                            </div>
+                        </div>
+                        <div class="stack-card window-card about-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Deploy</span>
+                            </div>
+                            <div class="window-body">
+                                <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 3v10M8 9l4 4 4-4" />
+                                    <path d="M5 18h14" />
+                                </svg>
+                                <p>Деплой и эксплуатация (Docker/systemd)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,6 +510,7 @@
                 </div>
                 <div class="experience-cards">
                     <div class="experience-card">
+<<<<<<< HEAD
                         <div class="experience-text">
                             <div class="experience-subtitle">
                                 Ponches — Backend разработчик (сентябрь 2025 — настоящее время)
@@ -161,55 +529,108 @@
                         <div class="experience-text">
                             <div class="experience-subtitle">
                                 Algorithm AI — Разработчик AI агентов (январь 2025 — август 2025)
+=======
+                        <div class="about-window experience-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Ponches</span>
+>>>>>>> 7e858ec (feat: Рефакторинг стилей и обновление изображений для улучшения UI)
                             </div>
-                            <div class="experience-description">
-                                Разработка B2B-сервисов с ИИ-агентами и автоматизацией бизнес-процессов.
-                                Проект «Квалификатор Лидов» — агент, который самостоятельно проводит квалификацию
-                                лидов и передаёт их в amoCRM. Используются FastAPI, PostgreSQL, OpenAI,
-                                Telegram/WhatsApp API (Pact).
-                                Проект «ИИ Юрист» — консультант, собирающий релевантные дела и отвечающий на запросы
-                                по юр. тематике. Используется Dify, парсинг и LangChain-архитектура.
+                            <div class="window-body">
+                                <div class="experience-subtitle">
+                                    Ponches — разработчик (сентябрь 2025 — по настоящее время)
+                                </div>
+                                <div class="experience-description">
+                                    Автоматизирую операционные процессы и строю сервисы вокруг данных: аналитика/ETL,
+                                    Telegram-боты и интеграции. Делаю упор на надёжные пайплайны и предсказуемую
+                                    эксплуатацию: очереди задач, polling/backoff, контроль доступа (whitelist),
+                                    автозапуск через systemd timers, стабильная обработка ошибок.
+                                    <br>Ключевые проекты: mpstats_mvp — аналитика WB/MPStats (snapshots, timeseries,
+                                    seller watch, dashboard); track_queue_orders_bot — очередь задач и выдача QR/кодов;
+                                    ponches_rop — ETL + LLM-анализ с расписанием; BAS-автоматизации —
+                                    авторегистрация, автовыкуп и обновление статусов.
+                                </div>
+                                <a href="https://ponches.me/" class="experience-button">Подробнее</a>
                             </div>
-                            <a href="https://algoritmai.com" class="experience-button">Подробнее</a>
                         </div>
                     </div>
                     <div class="experience-card">
-                        <div class="experience-text">
-                            <div class="experience-subtitle">
-                                Daily Challenge — Разработчик (сентябрь 2024 — декабрь 2024)
+                        <div class="about-window experience-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Twogether</span>
                             </div>
-                            <div class="experience-description">
-                                Стартап-инкубатор проектов на продажу.
-                                Проект «Коммьюнити Бот» — Telegram-бот для знакомств внутри закрытых сообществ, с
-                                ML-алгоритмом рекомендаций. Работал с Telegram API, Python, ML-библиотеками.
+                            <div class="window-body">
+                                <div class="experience-subtitle">
+                                    Twogether — Telegram Mini App для пар
+                                </div>
+                                <div class="experience-description">
+                                    Помогает вести общий «дом отношений» с желаниями (wishlist), идеями для свиданий и
+                                    подарков, альбомом моментов и ежедневными активностями/стрик-механикой. Проект делаю
+                                    end-to-end: продуктовая логика, UI/UX, бэкенд и интеграции, включая монетизацию через
+                                    Telegram Stars (лимиты бесплатного тарифа и микро-покупки).
+                                </div>
+                                <a href="https://t.me/twogetherapp_bot" class="experience-button">Подробнее</a>
                             </div>
-                            <a href="http://daily-challenge.com" class="experience-button">Подробнее</a>
                         </div>
                     </div>
                     <div class="experience-card">
+<<<<<<< HEAD
                         <div class="experience-text">
                             <div class="experience-subtitle">
                                 KIBERone — Тьютор (январь 2024 — настоящее время)
+=======
+                        <div class="about-window experience-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Algorithm.ai</span>
+>>>>>>> 7e858ec (feat: Рефакторинг стилей и обновление изображений для улучшения UI)
                             </div>
-                            <div class="experience-description">
-                                Преподавал программирование детям в возрасте 6–14 лет в интерактивной форме.
-                                Проводил занятия, составлял планы и курировал прогресс учеников.
+                            <div class="window-body">
+                                <div class="experience-subtitle">
+                                    Algorithm.ai — ведущий разработчик (13 января 2025 — август 2025)
+                                </div>
+                                <div class="experience-description">
+                                    Разработал и внедрил в компании продовую систему квалификации лидов и
+                                    интеграционную инфраструктуру вокруг неё: ключевой продукт «Квалификатор лидов»
+                                    (Python/FastAPI/PostgreSQL) с интеграциями Pact, Telegram, WhatsApp, amoCRM —
+                                    построен с нуля, задокументирован и запущен в проде. Параллельно сделал сервис
+                                    Pact Webhook Fanout для параллельной доставки вебхуков (ретраи, дедупликация,
+                                    режимы подтверждения), систему уведомлений amoCRM → Telegram через Redis Streams
+                                    (HMAC-подпись, идемпотентность, aiogram-бот) и LLM-утилиту для Google Sheets со
+                                    строгой валидацией формата. Развивал архитектуру leads_classifier_v3: сценарный
+                                    движок FSM + агенты, shadow-mode, трейсинг и контролируемая обработка ошибок.
+                                </div>
+                                <a href="https://algoritmai.com" class="experience-button">Подробнее</a>
                             </div>
-                            <a href="https://kiber-one.com" class="experience-button">Подробнее</a>
                         </div>
                     </div>
                     <div class="experience-card">
-                        <div class="experience-text">
-                            <div class="experience-subtitle">
-                                Приложение для Jump Premium
+                        <div class="about-window experience-window">
+                            <div class="window-header">
+                                <span class="window-dot dot-red"></span>
+                                <span class="window-dot dot-yellow"></span>
+                                <span class="window-dot dot-green"></span>
+                                <span class="window-title">Jump Premium</span>
                             </div>
-                            <div class="experience-description">
-                                <b>(Коммерческий проект)</b> Разработал приложение для фитнес-клуба Jump Premium. В
-                                нем пользователь может ознакомиться с доступными тренажерами, выбрать план тренировок и
-                                питания, а также может отслеживать срок действия абонемента и следить за событиями
-                                сообщества.
+                            <div class="window-body">
+                                <div class="experience-subtitle">
+                                    JumpBot для Jump Premium
+                                </div>
+                                <div class="experience-description">
+                                    Разработал Telegram-бот для фитнес-клуба: доступ к тренировкам и планам, питанию,
+                                    базе тренажёров и тренеров, услугам и профилю; реализовал избранное, админ-панель,
+                                    рассылки и отчёты. Стек: Python, aiogram, SQLAlchemy, pytest (проект структурирован
+                                    по модулям handlers/database/utils).
+                                </div>
+                                <a href="https://t.me/JumpPremium_bot" class="experience-button">Подробнее</a>
                             </div>
-                            <a href="https://t.me/JumpPremium_bot" class="experience-button">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -221,17 +642,52 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-rights">
-                    © 2025
+                    © 2026
                 </div>
                 <div class="footer-links">
                     <a href="https://t.me/headlinerme"><img src="static/images/tg.png"></a>
                     <a href="https://instagram.com/headlinerme?igshid=OGQ5ZDc2ODk2ZA=="><img
                             src="static/images/inst.png"></a>
-                    <a href="https://vk.com/headlinerme"><img src="static/images/vk.png"></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
+        const navIndicator = document.querySelector(".nav-indicator");
+        const navLinksContainer = document.querySelector(".nav-links");
+        const INDICATOR_PADDING = 2;
+        const INDICATOR_Y_OFFSET = -2;
+        const INDICATOR_X_OFFSET = -2;
+
+        const moveIndicatorTo = (link) => {
+            if (!link || !navIndicator || !navLinksContainer) return;
+            const linkRect = link.getBoundingClientRect();
+            const parentRect = navLinksContainer.getBoundingClientRect();
+            const left = linkRect.left - parentRect.left + INDICATOR_X_OFFSET;
+            const maxHeight = parentRect.height - INDICATOR_PADDING * 2;
+            const targetHeight = Math.min(linkRect.height + 4, maxHeight);
+            const top = linkRect.top - parentRect.top + (linkRect.height - targetHeight) / 2 + INDICATOR_Y_OFFSET;
+            navIndicator.style.width = `${linkRect.width}px`;
+            navIndicator.style.height = `${targetHeight}px`;
+            navIndicator.style.transform = `translate(${left}px, ${top}px)`;
+            navIndicator.style.opacity = "1";
+        };
+
+        if (navIndicator && navLinks.length && navLinksContainer) {
+            navIndicator.style.opacity = "0";
+
+            navLinks.forEach((link) => {
+                link.addEventListener("mouseenter", () => moveIndicatorTo(link));
+                link.addEventListener("focus", () => moveIndicatorTo(link));
+                link.addEventListener("click", () => moveIndicatorTo(link));
+            });
+
+            navLinksContainer.addEventListener("mouseleave", () => {
+                navIndicator.style.opacity = "0";
+            });
+        }
+    </script>
 </body>
 
 </html>
