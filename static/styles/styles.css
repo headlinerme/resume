@@ -961,6 +961,24 @@ footer {
     width: 10%;
 }
 
+.footer-contact {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-contact a:hover {
+    opacity: 1;
+}
+
 .footer-links {
     width: 10%;
     display: flex;
